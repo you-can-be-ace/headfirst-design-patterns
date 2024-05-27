@@ -10,6 +10,14 @@
 <br/><br/>
 
 
+⚙️ Convention
+---
+- example
+  - `/src/main/java/com.ace.example` 패키지 하위에 `chapterXX` 패키지 생성
+- summary
+  - 본인 이름 패키지 하위에 정리한 자료 업로드 (확장자 자유롭게)
+<br/><br/>
+
 ✍🏻 Planning
 ---
 |Part|제목|코드담당자|발표자|스터디일시|
