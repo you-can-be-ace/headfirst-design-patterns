@@ -18,6 +18,17 @@
   - 본인 이름 패키지 하위에 정리한 자료 업로드 (확장자 자유롭게)
 <br/><br/>
 
+
+💻 Local Setting Guide
+---
+- 로컬 환경 세팅 및 개발 편의를 위해 Springboot(Java 21 + Gradle)로 구성하였다.
+- Java 21 버전 관련 오류가 발생한다면, 아래 두 군데를 확인해보면 된다.
+  - `Preferences > Build, Excution, Deployment > Build Tools > Gradle > Gradle JVM`이 JDK 21로 설정되어 있는지 확인
+  - `Project Structure > Project Settings > Project`
+    - `SDK`가 JDK 21로 설정되어 있는지 확인
+    - `Language Level`이 21로 설정되어 있는지 확인 (21이 목록에서 안뜨는 경우 IntelliJ Update)
+<br/><br/>
+
 ✍🏻 Planning
 ---
 |Part|제목|코드담당자|발표자|스터디일시|
