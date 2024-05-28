@@ -6,8 +6,8 @@ import com.ace.example.chapter01.quack.Quack;
 public class MallardDuck extends Duck {
 
   public MallardDuck() {
-    quackBehaior = new Quack();
     flyBehavior = new FlyWithWings();
+    quackBehaior = new Quack();
   }
 
   public void display() {
