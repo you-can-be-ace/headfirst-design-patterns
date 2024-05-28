@@ -1,4 +1,4 @@
-package com.ace.example.chapter01;
+package com.ace.example.chapter01.quack;
 
 public interface QuackBehavior {
 

@@ -1,6 +1,10 @@
 package com.ace.example.chapter01;
 
+import com.ace.example.chapter01.fly.FlyBehavior;
+import com.ace.example.chapter01.quack.QuackBehavior;
+
 public abstract class Duck {
+
   FlyBehavior flyBehavior;
   QuackBehavior quackBehaior;
 
