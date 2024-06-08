@@ -15,6 +15,7 @@
 # 옵저버 패턴의 구조
 
 - 보통 주제 인터페이스와 옵저버 인터페이스가 들어있는 클래스 디자인으로 구현한다.
+  
 ![chapter02_1](https://github.com/you-can-be-ace/headfirst-design-patterns/assets/132281360/51e9cf1d-33ab-4606-a6b3-1a3aaa68671e)
 
 - **Subject 인터페이스**
