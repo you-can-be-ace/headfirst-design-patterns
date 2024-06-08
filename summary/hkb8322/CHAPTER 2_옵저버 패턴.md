@@ -29,8 +29,7 @@ A. Observer를 알림 순서에 의존하지 말라는 JDK 권고가 있음
 </aside>
 
 # 옵저버 패턴의 구조
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/31151178-2abf-4285-b27d-d78331d3f581/2f34bddb-7e88-42e1-b1ab-c15bcce1c82d/Untitled.png)
+![image](https://github.com/you-can-be-ace/headfirst-design-patterns/assets/16659000/ae7f37f2-4bb8-4fd7-b611-804b206f012a)
 
 - 주제 역할을 하는 구상 클래스는 Subject 인터페이스 구현
 - 각 주제마다 여러 개의 옵저버 존재 가능
@@ -54,8 +53,8 @@ A. Observer를 알림 순서에 의존하지 말라는 JDK 권고가 있음
     
 
 # 기상 스테이션 설계
+![image](https://github.com/you-can-be-ace/headfirst-design-patterns/assets/16659000/8ad383e9-2fb9-491e-ac7a-49c0c0acd792)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/31151178-2abf-4285-b27d-d78331d3f581/2e4fc691-dc8e-474f-a78f-866fcc6593f5/Untitled.png)
 
 # 자바의 옵저버 패턴
 
