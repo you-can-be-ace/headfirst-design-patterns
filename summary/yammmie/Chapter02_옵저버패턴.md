@@ -6,7 +6,8 @@
 
 ## 작동 원리
 
-<img width="773" alt="image" src="https://github.com/you-can-be-ace/headfirst-design-patterns/assets/141018558/4afbd17d-96ee-4269-8a40-a35d9ace94fc">
+<img width="919" alt="image" src="https://github.com/you-can-be-ace/headfirst-design-patterns/assets/141018558/3cf4e8ac-b2f8-4558-ac52-34b9cd799113">
+
 
 - 주제 객체는 주제에서 중요한 데이터 관리
 - 옵저버 객체는 주제를 구독하며 데이터가 바뀌면 새로운 데이터 값이 어떤 방법으로든 옵저버에게 전달됨
