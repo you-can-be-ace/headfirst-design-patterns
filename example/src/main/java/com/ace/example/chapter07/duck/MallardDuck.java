@@ -1,4 +1,4 @@
-package com.ace.example.chapter07;
+package com.ace.example.chapter07.duck;
 
 public class MallardDuck implements Duck{
 
