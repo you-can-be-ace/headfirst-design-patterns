@@ -1,4 +1,4 @@
-package com.ace.example.chapter07.enumerationiterator;
+package com.ace.example.chapter07.adapter.enumerationiterator;
 
 import java.util.Enumeration;
 import java.util.Iterator;

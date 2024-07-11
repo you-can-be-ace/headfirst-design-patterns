@@ -1,4 +1,4 @@
-package com.ace.example.chapter07.duck;
+package com.ace.example.chapter07.adapter.duck;
 
 public interface Duck {
   public void quack();
