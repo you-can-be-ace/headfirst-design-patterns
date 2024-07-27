@@ -1,5 +1,7 @@
 package com.ace.example.chapter09;
 
+import com.ace.example.chapter09.iterator.Iterator;
+import com.ace.example.chapter09.iterator.PancakeHouseIterator;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,8 +23,8 @@ public class PancakeHouseMenu {
     menuItems.add(menuItem);
   }
 
-  public List<MenuItem> getMenuItems() {
-    return menuItems;
+  public Iterator createIterator() {
+    return new PancakeHouseIterator(menuItems);
   }
 
 }

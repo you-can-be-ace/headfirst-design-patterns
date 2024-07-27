@@ -1,5 +1,8 @@
 package com.ace.example.chapter09;
 
+import com.ace.example.chapter09.iterator.DinnerMenuIterator;
+import com.ace.example.chapter09.iterator.Iterator;
+
 public class DinnerMenu {
 
   static final int MAX_ITEMS = 6;
@@ -25,7 +28,7 @@ public class DinnerMenu {
     }
   }
 
-  public MenuItem[] getMenuItems() {
-    return menuItems;
+  public Iterator createIterator() {
+    return new DinnerMenuIterator(menuItems);
   }
 }
