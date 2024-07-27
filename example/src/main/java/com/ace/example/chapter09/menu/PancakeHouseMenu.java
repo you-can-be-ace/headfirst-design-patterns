@@ -1,11 +1,10 @@
 package com.ace.example.chapter09.menu;
 
-import com.ace.example.chapter09.iterator.Iterator;
-import com.ace.example.chapter09.iterator.PancakeHouseIterator;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class PancakeHouseMenu {
+public class PancakeHouseMenu implements Menu {
 
   List<MenuItem> menuItems;
 
@@ -24,7 +23,7 @@ public class PancakeHouseMenu {
   }
 
   public Iterator createIterator() {
-    return new PancakeHouseIterator(menuItems);
+    return menuItems.iterator();
   }
 
 }

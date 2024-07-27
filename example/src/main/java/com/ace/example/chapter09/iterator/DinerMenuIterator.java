@@ -1,6 +1,7 @@
 package com.ace.example.chapter09.iterator;
 
 import com.ace.example.chapter09.menu.MenuItem;
+import java.util.Iterator;
 
 public class DinerMenuIterator implements Iterator {
 
@@ -25,5 +26,10 @@ public class DinerMenuIterator implements Iterator {
     var item = items[position];
     position++;
     return item;
+  }
+
+  @Override
+  public void remove() {
+    throw new UnsupportedOperationException("메뉴 항목은 지우면 안됩니다.");
   }
 }

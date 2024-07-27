@@ -1,15 +1,15 @@
 package com.ace.example.chapter09;
 
-import com.ace.example.chapter09.iterator.Iterator;
-import com.ace.example.chapter09.menu.DinerMenu;
-import com.ace.example.chapter09.menu.PancakeHouseMenu;
+import com.ace.example.chapter09.menu.Menu;
+import com.ace.example.chapter09.menu.MenuItem;
+import java.util.Iterator;
 
 public class Waitress {
 
-  PancakeHouseMenu pancakeHouseMenu;
-  DinerMenu dinerMenu;
+  Menu pancakeHouseMenu;
+  Menu dinerMenu;
 
-  public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+  public Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
     this.pancakeHouseMenu = pancakeHouseMenu;
     this.dinerMenu = dinerMenu;
   }
@@ -26,7 +26,7 @@ public class Waitress {
 
   private void printMenu(Iterator iterator) {
     while (iterator.hasNext()) {
-      var menuItem = iterator.next();
+      var menuItem = (MenuItem) iterator.next();
       System.out.print(menuItem.getName() + ", ");
       System.out.print(menuItem.getPrice() + " -- ");
       System.out.println(menuItem.getDescription());
