@@ -1,4 +1,4 @@
-package com.ace.example.chapter09;
+package com.ace.example.chapter09.menu;
 
 public class MenuItem {
 

@@ -1,6 +1,6 @@
 package com.ace.example.chapter09.iterator;
 
-import com.ace.example.chapter09.MenuItem;
+import com.ace.example.chapter09.menu.MenuItem;
 
 public class DinerMenuIterator implements Iterator {
 
@@ -22,7 +22,7 @@ public class DinerMenuIterator implements Iterator {
 
   @Override
   public MenuItem next() {
-    MenuItem item = items[position];
+    var item = items[position];
     position++;
     return item;
   }

@@ -1,4 +1,4 @@
-package com.ace.example.chapter09;
+package com.ace.example.chapter09.menu;
 
 import com.ace.example.chapter09.iterator.Iterator;
 import com.ace.example.chapter09.iterator.PancakeHouseIterator;

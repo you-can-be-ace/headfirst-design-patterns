@@ -1,6 +1,6 @@
 package com.ace.example.chapter09.iterator;
 
-import com.ace.example.chapter09.MenuItem;
+import com.ace.example.chapter09.menu.MenuItem;
 import java.util.List;
 
 public class PancakeHouseIterator implements Iterator {
@@ -23,7 +23,7 @@ public class PancakeHouseIterator implements Iterator {
 
   @Override
   public MenuItem next() {
-    MenuItem item = items.get(position);
+    var item = items.get(position);
     position++;
     return item;
   }

@@ -1,6 +1,6 @@
 package com.ace.example.chapter09.iterator;
 
-import com.ace.example.chapter09.MenuItem;
+import com.ace.example.chapter09.menu.MenuItem;
 
 public interface Iterator {
 
