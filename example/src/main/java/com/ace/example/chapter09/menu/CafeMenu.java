@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+@Deprecated
 public class CafeMenu implements Menu {
 
   Map<String, MenuItem> menuItems = new HashMap<>();

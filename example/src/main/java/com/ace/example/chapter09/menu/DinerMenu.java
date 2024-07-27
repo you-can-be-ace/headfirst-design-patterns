@@ -3,6 +3,7 @@ package com.ace.example.chapter09.menu;
 import com.ace.example.chapter09.iterator.DinerMenuIterator;
 import java.util.Iterator;
 
+@Deprecated
 public class DinerMenu implements Menu {
 
   static final int MAX_ITEMS = 6;
