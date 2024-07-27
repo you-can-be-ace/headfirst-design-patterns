@@ -3,35 +3,27 @@ package com.ace.example.chapter09;
 import com.ace.example.chapter09.menu.Menu;
 import com.ace.example.chapter09.menu.MenuItem;
 import java.util.Iterator;
+import java.util.List;
 
 public class Waitress {
 
-  Menu pancakeHouseMenu;
-  Menu dinerMenu;
-  Menu cafeMenu;
+  List<Menu> menus;
 
-  public Waitress(Menu pancakeHouseMenu, Menu dinerMenu, Menu cafeMenu) {
-    this.pancakeHouseMenu = pancakeHouseMenu;
-    this.dinerMenu = dinerMenu;
-    this.cafeMenu = cafeMenu;
+  public Waitress(List<Menu> menus) {
+    this.menus = menus;
   }
 
   public void printMenu() {
-    var pancakeIterator = pancakeHouseMenu.createIterator();
-    var dinerIterator = dinerMenu.createIterator();
-    var cafeIterator = cafeMenu.createIterator();
-
-    System.out.println("메뉴\n---\n아침 메뉴");
-    printMenu(pancakeIterator);
-    System.out.println("\n점심 메뉴");
-    printMenu(dinerIterator);
-    System.out.println("\n저녁 메뉴");
-    printMenu(cafeIterator);
+    var menuIterator = menus.iterator();
+    while (menuIterator.hasNext()) {
+      var menu = menuIterator.next();
+      printMenu(menu.createIterator());
+    }
   }
 
-  private void printMenu(Iterator iterator) {
+  private void printMenu(Iterator<MenuItem> iterator) {
     while (iterator.hasNext()) {
-      var menuItem = (MenuItem) iterator.next();
+      var menuItem = iterator.next();
       System.out.print(menuItem.getName() + ", ");
       System.out.print(menuItem.getPrice() + " -- ");
       System.out.println(menuItem.getDescription());
