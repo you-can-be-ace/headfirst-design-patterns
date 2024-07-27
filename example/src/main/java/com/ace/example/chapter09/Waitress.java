@@ -8,20 +8,25 @@ public class Waitress {
 
   Menu pancakeHouseMenu;
   Menu dinerMenu;
+  Menu cafeMenu;
 
-  public Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
+  public Waitress(Menu pancakeHouseMenu, Menu dinerMenu, Menu cafeMenu) {
     this.pancakeHouseMenu = pancakeHouseMenu;
     this.dinerMenu = dinerMenu;
+    this.cafeMenu = cafeMenu;
   }
 
   public void printMenu() {
     var pancakeIterator = pancakeHouseMenu.createIterator();
     var dinerIterator = dinerMenu.createIterator();
+    var cafeIterator = cafeMenu.createIterator();
 
     System.out.println("메뉴\n---\n아침 메뉴");
     printMenu(pancakeIterator);
     System.out.println("\n점심 메뉴");
     printMenu(dinerIterator);
+    System.out.println("\n저녁 메뉴");
+    printMenu(cafeIterator);
   }
 
   private void printMenu(Iterator iterator) {

@@ -28,6 +28,7 @@ public class DinerMenu implements Menu {
     }
   }
 
+  @Override
   public Iterator createIterator() {
     return new DinerMenuIterator(menuItems);
   }
