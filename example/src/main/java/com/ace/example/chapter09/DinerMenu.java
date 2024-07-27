@@ -1,15 +1,15 @@
 package com.ace.example.chapter09;
 
-import com.ace.example.chapter09.iterator.DinnerMenuIterator;
+import com.ace.example.chapter09.iterator.DinerMenuIterator;
 import com.ace.example.chapter09.iterator.Iterator;
 
-public class DinnerMenu {
+public class DinerMenu {
 
   static final int MAX_ITEMS = 6;
   int numberOfItems = 0;
   MenuItem[] menuItems;
 
-  public DinnerMenu() {
+  public DinerMenu() {
     menuItems = new MenuItem[MAX_ITEMS];
 
     addItem("채식주의자용 BLT", "통밀 위에 콩고기 베이컨, 상추, 토마토를 얹은 메뉴", true, 2.99);
@@ -29,6 +29,6 @@ public class DinnerMenu {
   }
 
   public Iterator createIterator() {
-    return new DinnerMenuIterator(menuItems);
+    return new DinerMenuIterator(menuItems);
   }
 }

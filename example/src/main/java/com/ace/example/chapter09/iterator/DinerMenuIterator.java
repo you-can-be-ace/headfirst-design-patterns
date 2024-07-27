@@ -2,12 +2,12 @@ package com.ace.example.chapter09.iterator;
 
 import com.ace.example.chapter09.MenuItem;
 
-public class DinnerMenuIterator implements Iterator {
+public class DinerMenuIterator implements Iterator {
 
   MenuItem[] items;
   int position = 0;
 
-  public DinnerMenuIterator(MenuItem[] items) {
+  public DinerMenuIterator(MenuItem[] items) {
     this.items = items;
   }
 
