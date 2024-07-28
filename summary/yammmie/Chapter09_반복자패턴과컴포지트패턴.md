@@ -245,6 +245,8 @@ public class MenuTestDrive {
 - `HashMap`은 반복자를 간접적으로 지원하는 클래스
     - 반복자를 가져오는 것은 `values` 컬렉션을 먼저 가져온 후에 가능하기 때문
 
+<br><br>
+
 🔗 Iterable과 Iterator: [https://www.notion.so/47-ded0bf83255548ad9d54ff911df1f270?pvs=4#a8b5346074034d2fbfc21eeef2477e4b](https://www.notion.so/ded0bf83255548ad9d54ff911df1f270?pvs=21)
 
 🔗 외부 반복자와 내부 반복자: [https://www.notion.so/47-ded0bf83255548ad9d54ff911df1f270?pvs=4#dd93be8e20c7476894750109f11c8d2b](https://www.notion.so/ded0bf83255548ad9d54ff911df1f270?pvs=21)
