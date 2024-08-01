@@ -9,6 +9,7 @@ public class GumballMachine {
     State noQuarterState;
     State hasQuarterState;
     State soldState;
+    State winnerState;
 
     State state;
     int count = 0;

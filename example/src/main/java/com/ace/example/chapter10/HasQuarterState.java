@@ -1,8 +1,10 @@
 package com.ace.example.chapter10;
 
-//import java.util.Random;
+import java.util.Random;
 
 public class HasQuarterState implements State {
+
+	Random randomWinner = new Random(System.currentTimeMillis()); // 10%의 확률로 당첨 여부 결정
 	GumballMachine gumballMachine;
  
 	public HasQuarterState(GumballMachine gumballMachine) {
@@ -20,7 +22,12 @@ public class HasQuarterState implements State {
  
 	public void turnCrank() {
 		System.out.println("손잡이를 돌리셨습니다.");
-		gumballMachine.setState(gumballMachine.getSoldState());
+		int winner = randomWinner.nextInt(10);
+		if (winner == 0 && gumballMachine.getCount() > 1) {
+			gumballMachine.setState(gumballMachine.getWinnerState());
+		} else {
+			gumballMachine.setState(gumballMachine.getSoldState());
+		}
 	}
 
     public void dispense() {
