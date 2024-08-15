@@ -10,7 +10,7 @@ public class DJView implements ActionListener, BeatObserver, BPMObserver {
     ControllerInterface controller;
     JFrame viewFrame;
     JPanel viewPanel;
-    JProgressBar beatBar;
+    BeatBar beatBar;
     JLabel bpmOutputLabel;
     JFrame controlFrame;
     JPanel controlPanel;
@@ -38,7 +38,7 @@ public class DJView implements ActionListener, BeatObserver, BPMObserver {
         viewFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         viewFrame.setSize(new Dimension(100, 80));
         bpmOutputLabel = new JLabel("offline", SwingConstants.CENTER);
-        beatBar = new JProgressBar();
+        beatBar = new BeatBar();
         beatBar.setValue(0);
         JPanel bpmPanel = new JPanel(new GridLayout(2, 1));
         bpmPanel.add(beatBar);
@@ -156,7 +156,7 @@ public class DJView implements ActionListener, BeatObserver, BPMObserver {
         }
     }
 
-    public void updateBpm() {
+    public void updateBPM() {
         int bpm = model.getBPM();
         if (bpm == 0) {
             bpmOutputLabel.setText("offline");
